@@ -6,47 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.ezgi.restaurantapp.MainActivity">
 
-    <RadioGroup
-        android:id="@+id/myRadioGroup"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountPass">
-
-        <RadioButton
-            android:id="@+id/radioWaiter"
-            android:layout_width="95dp"
-            android:layout_height="34dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:text="Waiter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/accountPass" />
-
-        <RadioButton
-            android:id="@+id/radioBoss"
-            android:layout_width="94dp"
-            android:layout_height="34dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Boss"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioWaiter"
-            app:layout_constraintVertical_bias="0.0" />
-
-
-    </RadioGroup>
-
     <EditText
         android:id="@+id/accountID"
         android:layout_width="wrap_content"
@@ -56,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="ID"
+        android:hint="User Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,29 +24,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.195" />
 
-    <EditText
-        android:id="@+id/accountPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textShortMessage|textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountID"
-        app:layout_constraintVertical_bias="0.035" />
-
     <Button
         android:id="@+id/enterButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="204dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -95,8 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myRadioGroup"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintTop_toBottomOf="@+id/accountPass" />
 
     <TextView
         android:id="@+id/output"
@@ -106,10 +46,24 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+        app:layout_constraintTop_toBottomOf="@+id/enterButton"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <EditText
+        android:id="@+id/accountPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountID" />
 
 </android.support.constraint.ConstraintLayout>
